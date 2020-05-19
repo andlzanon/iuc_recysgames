@@ -1,0 +1,106 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header {
+    background-color: #563D7C;
+}
+
+.navbar {
+    background-color: #563D7C;
+}
+
+.btn-outline-primary {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn-outline-primary:hover {
+    color: #563D7C;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.form-control {
+    border-radius: 15px;
+    height: 30px;
+    color: #989898;
+}
+
+.search-item {
+    margin: auto;
+}
+
+.profile-item {
+    margin: auto;
+}
+
+.cart-item {
+    margin: auto;
+}
+
+.accessibility-item {
+    margin: auto;
+}
+
+.search {
+    border-radius: 15px !important;
+    padding-right: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    bottom: 5px;
+    z-index: 2;
+}
+
+.profile {
+    padding: 0;
+}
+
+.profile-item-container {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.profile-icon {
+    height: 38px;
+    vertical-align: middle;
+}
+
+.welcome-container {
+    display: block;
+    justify-content: center;
+}
+
+.welcome-message {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.cart-icon {
+    height: 38px;
+    vertical-align: middle;
+}
+
+.content {
+    min-height: 600px;
+}
+
+.footer {
+    background-color: #7952B3;
+    color: #FFFFFF;
+}
+
+.footer-row {
+    height: 100px;
+}
+
+.footer-row > div > a {
+    color: #FFFFFF;
+}
