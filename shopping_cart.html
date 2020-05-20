@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Home</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="stylesheet" type="text/css" href="shopping_cart.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="header">
+			<nav class="navbar navbar-expand-lg navbar-dark container-md">
+				<a class="navbar-brand" href="#">
+					<img
+						src="./images/logo.png"
+						height="40"
+						alt=""
+						loading="lazy"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<form class="form-inline search-item col-md-8">
+						<div class="input-group col-md-12">
+							<input
+								type="text"
+								class="form-control search col-md-12"
+								placeholder="Busque aqui um game..."
+							/>
+							<div
+								class="input-group-append search-icon"
+								id="button-addon4"
+							>
+								<img
+									src="./images/search.png"
+									height="20"
+									alt=""
+									loading="lazy"
+								/>
+							</div>
+						</div>
+					</form>
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+					<ul class="navbar-nav navbar-right">
+						<li class="nav-item active profile-item">
+							<a class="nav-link profile" href="#"
+								><div class="profile-item-container">
+									<img
+										class="profile-icon"
+										src="./images/user.png"
+										alt=""
+										loading="lazy"
+									/>
+									<div class="welcome-container">
+										<div class="welcome-message">
+											Bem vindo,
+										</div>
+										<div class="welcome-message">André</div>
+									</div>
+								</div></a
+							>
+						</li>
+						<li class="nav-item active cart-item">
+							<a class="nav-link" href="#"
+								><img
+									class="cart-icon"
+									src="./images/shopping_cart.png"
+									alt=""
+									loading="lazy"
+							/></a>
+						</li>
+						<li class="nav-item active accessibility-item">
+							<button
+								class="btn btn-outline-primary my-2 my-sm-0"
+								type="submit"
+							>
+								Acessibilidade
+							</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="details-container">
+				<h1 class="details-title">Carrinho de Compras</h1>
+				<div class="list-container">
+					<table id="details" class="table">
+						<thead>
+							<tr>
+								<th scope="col">Produto</th>
+								<th scope="col">Quantidade</th>
+								<th scope="col">Valor</th>
+								<th scope="col">Total</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row">
+									<div class="item-description">
+										<img
+											class="item-image"
+											src="./images/hollowknight.png"
+										/>
+										Hollow Knight
+									</div>
+								</td>
+								<td><div class="item-quantity">1</div></td>
+								<td>R$ 100,00</td>
+								<td>R$ 100,00</td>
+								<td>
+									<a class="delete-link" href="#"
+										><img
+											class="delete-icon"
+											src="./images/delete.png"
+									/></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="list-total">
+						Total: R$ 100,00
+					</div>
+				</div>
+				<div class="row inline-container">
+					<div class="col-md-6 freight">
+						<div class="freight-header">
+							Frete
+						</div>
+						<div class="freight-content">
+							<div class="cep-info-row">
+								<div class="col-8 cep-label">
+									Digite seu CEP para calcular o frete:
+								</div>
+								<div class="col-4">
+									<input
+										class="cep-input"
+										maxlength="9"
+										type="text"
+									/>
+								</div>
+							</div>
+							<div class="cep-value-row">
+								<div class="col-8 cep-label">
+									Valor:
+								</div>
+								<div class="col-4 cep-label">
+									R$ 14,75
+								</div>
+							</div>
+							<div class="cep-button-row">
+								<button
+									type="button"
+									class="btn btn-primary cep-button"
+								>
+									Calcular
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 total-cart">
+						<div class="total-cart-header">
+							Total
+						</div>
+						<div class="total-cart-content">
+							<div class="total-row">
+								<div class="col-7 col-left">
+									Sub-total
+								</div>
+								<div class="col-5 col-right">
+									R$ 100,00
+								</div>
+							</div>
+							<div class="total-row">
+								<div class="col-7 col-left">
+									Frete
+								</div>
+								<div class="col-5 col-right">
+									R$ 14,75
+								</div>
+							</div>
+							<div class="total-row">
+								<div class="divider-line"></div>
+							</div>
+							<div class="total-row">
+								<div class="col-7 col-left">
+									Total
+								</div>
+								<div class="col-5 col-right">
+									R$ 114,75
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row inline-container">
+					<div class="button-container">
+						<button
+							type="button"
+							class="btn btn-lg btn-outline-secondary"
+						>
+							CONTINUAR COMPRANDO
+						</button>
+						<button
+							type="button"
+							class="btn btn-lg btn-primary"
+						>
+							FINALIZAR COMPRA
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="row align-items-center footer-row">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<a href="#">Sobre nós</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<a href="#">Como comprar?</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<a href="#">Formas de pagamento</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<a href="#">Contato</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
