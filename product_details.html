@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<title>Home</title>
+		<title>Detalhes do Produto</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
 			rel="stylesheet"
@@ -36,215 +36,218 @@
 		></script>
 	</head>
 	<body>
-		<div class="header">
-			<nav class="navbar navbar-expand-lg navbar-dark container-md">
-				<a class="navbar-brand" href="#">
-					<img
-						src="./images/logo.png"
-						height="40"
-						alt=""
-						loading="lazy"
-					/>
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div
-					class="collapse navbar-collapse"
-					id="navbarSupportedContent"
-				>
-					<form class="form-inline search-item col-md-8">
-						<div class="input-group col-md-12">
-							<input
-								type="text"
-								class="form-control search col-md-12"
-								placeholder="Busque aqui um game..."
+		<div id="page-container">
+			<div id="content-wrap">
+				<div class="header">
+					<nav class="navbar navbar-expand-lg navbar-dark container-md">
+						<a class="navbar-brand" href="#">
+							<img
+								src="./images/logo.png"
+								height="40"
+								alt=""
+								loading="lazy"
 							/>
-							<div
-								class="input-group-append search-icon"
-								id="button-addon4"
-							>
+						</a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+		
+						<div
+							class="collapse navbar-collapse"
+							id="navbarSupportedContent"
+						>
+							<form class="form-inline search-item col-md-8">
+								<div class="input-group col-md-12">
+									<input
+										type="text"
+										class="form-control search col-md-12"
+										placeholder="Busque aqui um game..."
+									/>
+									<div
+										class="input-group-append search-icon"
+										id="button-addon4"
+									>
+										<img
+											src="./images/search.png"
+											height="20"
+											alt=""
+											loading="lazy"
+										/>
+									</div>
+								</div>
+							</form>
+							<ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+							<ul class="navbar-nav navbar-right">
+								<li class="nav-item active profile-item">
+									<a class="nav-link profile" href="#"
+										><div class="profile-item-container">
+											<img
+												class="profile-icon"
+												src="./images/user.png"
+												alt=""
+												loading="lazy"
+											/>
+											<div class="welcome-container">
+												<div class="welcome-message">
+													Bem vindo,
+												</div>
+												<div class="welcome-message">André</div>
+											</div>
+										</div></a
+									>
+								</li>
+								<li class="nav-item active cart-item">
+									<a class="nav-link" href="#"
+										><img
+											class="cart-icon"
+											src="./images/shopping_cart.png"
+											alt=""
+											loading="lazy"
+									/></a>
+								</li>
+								<li class="nav-item active accessibility-item">
+									<button
+										class="btn btn-outline-primary my-2 my-sm-0"
+										type="submit"
+									>
+										Acessibilidade
+									</button>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="container">
+					<div class="details-container">
+						<div class="row details">
+							<div class="col-md-2 product-image-div">
 								<img
-									src="./images/search.png"
-									height="20"
-									alt=""
-									loading="lazy"
+									class="product-image"
+									src="./images/hollowknight.png"
 								/>
 							</div>
-						</div>
-					</form>
-					<ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
-					<ul class="navbar-nav navbar-right">
-						<li class="nav-item active profile-item">
-							<a class="nav-link profile" href="#"
-								><div class="profile-item-container">
-									<img
-										class="profile-icon"
-										src="./images/user.png"
-										alt=""
-										loading="lazy"
-									/>
-									<div class="welcome-container">
-										<div class="welcome-message">
-											Bem vindo,
-										</div>
-										<div class="welcome-message">André</div>
+							<div class="col-md-6 info-container">
+								<h2 class="product-title">Hollow Knight</h2>
+								<div class="row info-details">
+									<div class="col-md-6 col-left">
+										Distribuidor(a):
 									</div>
-								</div></a
-							>
-						</li>
-						<li class="nav-item active cart-item">
-							<a class="nav-link" href="#"
-								><img
-									class="cart-icon"
-									src="./images/shopping_cart.png"
-									alt=""
-									loading="lazy"
-							/></a>
-						</li>
-						<li class="nav-item active accessibility-item">
-							<button
-								class="btn btn-outline-primary my-2 my-sm-0"
-								type="submit"
-							>
-								Acessibilidade
-							</button>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<div class="container">
-			<div class="details-container">
-				<div class="row details">
-					<div class="col-md-2 product-image-div">
-						<img
-							class="product-image"
-							src="./images/hollowknight.png"
-						/>
-					</div>
-					<div class="col-md-6 info-container">
-						<h2 class="product-title">Hollow Knight</h2>
-						<div class="row info-details">
-							<div class="col-md-6 col-left">
-								Distribuidor(a):
-							</div>
-							<div class="col-md-6 col-right">Team Cherry</div>
-							<div class="col-md-6 col-left">Publicador(a):</div>
-							<div class="col-md-6 col-right">Team Cherry</div>
-							<div class="col-md-6 col-left">
-								Desenvolvedor(a):
-							</div>
-							<div class="col-md-6 col-right">Team Cherry</div>
-							<div class="col-md-6 col-left">Gênero:</div>
-							<div class="col-md-6 col-right">
-								Indie, Metroidvania
-							</div>
-							<div class="col-md-6 col-left">
-								Ano de Lan&ccedil;amento:
-							</div>
-							<div class="col-md-6 col-right">2017</div>
-						</div>
-					</div>
-					<div class="col-md-4 payment-details">
-						<div class="payments">
-							<h4 class="price">R$ 100,00</h4>
-							<p class="price-details">ou 5x R$ 20,00</p>
-							<p class="price-details">sem juros</p>
-						</div>
-						<button type="button" onclick="navigateTo('shopping_cart')" class="btn btn-primary buy-button">
-							COMPRAR
-						</button>
-					</div>
-				</div>
-				<div class="row-description">
-					<div class="col-md-12 description-container">
-						<div class="description-header">
-							Descrição
-						</div>
-						<div class="description-content">
-							<p>
-								Forje seu caminho em Hollow Knight! O premiado
-								ação/aventura épico, completo com todos os
-								Pacotes de Conteúdo que expandem o mundo.
-							</p>
-							<p>
-								Desça no mundo de Hollow Knight! O premiado jogo
-								ação/aventura de insetos e heróis. Explore
-								cavernas serpenteantes, cidades antigas e ermos
-								mortais. Lute contra criaturas malignas, alie-se
-								a insetos bizarros. Descubra a história antiga e
-								solucione mistérios enterrados no coração do
-								reino.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row-review">
-					<div class="col-md-12 review-container">
-						<div class="review-header">
-							Reviews
-						</div>
-						<div class="review-content">
-							<div class="start-container col-md-6 col-left">
-								<div class="rate col-center">
-									<h1>
-										4,0
-									</h1>
-									<img
-										class="review-stars"
-										src="./images/stars.png"
-									/>
+									<div class="col-md-6 col-right">Team Cherry</div>
+									<div class="col-md-6 col-left">Publicador(a):</div>
+									<div class="col-md-6 col-right">Team Cherry</div>
+									<div class="col-md-6 col-left">
+										Desenvolvedor(a):
+									</div>
+									<div class="col-md-6 col-right">Team Cherry</div>
+									<div class="col-md-6 col-left">Gênero:</div>
+									<div class="col-md-6 col-right">
+										Indie, Metroidvania
+									</div>
+									<div class="col-md-6 col-left">
+										Ano de Lan&ccedil;amento:
+									</div>
+									<div class="col-md-6 col-right">2017</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-right">
-								<div class="statistics col-center">
-									<img
-										class="stats-image"
-										src="./images/5 4 3 2 1.png"
-									/>
-									<img
-										class="stats-image"
-										src="./images/reviews.png"
-									/>
-									<img
-										class="stats-image"
-										src="./images/1 5 1 0 0.png"
-									/>
+							<div class="col-md-4 payment-details">
+								<div class="payments">
+									<h4 class="price">R$ 100,00</h4>
+									<p class="price-details">ou 5x R$ 20,00</p>
+									<p class="price-details">sem juros</p>
+								</div>
+								<button type="button" onclick="navigateTo('shopping_cart')" class="btn btn-primary buy-button">
+									COMPRAR
+								</button>
+							</div>
+						</div>
+						<div class="row-description">
+							<div class="col-md-12 description-container">
+								<div class="description-header">
+									Descrição
+								</div>
+								<div class="description-content">
+									<p>
+										Forje seu caminho em Hollow Knight! O premiado
+										ação/aventura épico, completo com todos os
+										Pacotes de Conteúdo que expandem o mundo.
+									</p>
+									<p>
+										Desça no mundo de Hollow Knight! O premiado jogo
+										ação/aventura de insetos e heróis. Explore
+										cavernas serpenteantes, cidades antigas e ermos
+										mortais. Lute contra criaturas malignas, alie-se
+										a insetos bizarros. Descubra a história antiga e
+										solucione mistérios enterrados no coração do
+										reino.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row-review">
+							<div class="col-md-12 review-container">
+								<div class="review-header">
+									Reviews
+								</div>
+								<div class="review-content">
+									<div class="start-container col-md-6 col-left">
+										<div class="rate col-center">
+											<h1>
+												4,0
+											</h1>
+											<img
+												class="review-stars"
+												src="./images/stars.png"
+											/>
+										</div>
+									</div>
+									<div class="col-md-6 col-right">
+										<div class="statistics col-center">
+											<img
+												class="stats-image"
+												src="./images/5 4 3 2 1.png"
+											/>
+											<img
+												class="stats-image"
+												src="./images/reviews.png"
+											/>
+											<img
+												class="stats-image"
+												src="./images/1 5 1 0 0.png"
+											/>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="footer">
-			<div class="container">
-				<div class="row align-items-center footer-row">
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<a href="#">Sobre nós</a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<a href="#">Como comprar?</a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<a href="#">Formas de pagamento</a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<a href="#">Contato</a>
+			<footer id="footer">
+				<div class="container">
+					<div class="row align-items-center footer-row">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<a href="#">Sobre nós</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<a href="#">Como comprar?</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<a href="#">Formas de pagamento</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<a href="#">Contato</a>
+						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
 		</div>
 	</body>
 </html>

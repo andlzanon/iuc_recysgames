@@ -122,15 +122,31 @@ body {
     vertical-align: middle;
 }
 
-.footer {
-    background-color: #7952B3;
-    color: #FFFFFF;
-}
-
 .footer-row {
     height: 100px;
+}
+
+#footer {
+    background-color: #7952B3;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;            /* Footer height */
+}
+
+#content-wrap {
+    padding-bottom: 100px;    /* Footer height */
 }
 
 .footer-row > div > a {
     color: #FFFFFF;
 }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+
+
