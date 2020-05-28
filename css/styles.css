@@ -148,5 +148,13 @@ body {
     min-height: 100vh;
 }
 
+#content-container {
+    padding-top: 65px;
+}
+
+#navbar-sections {
+    background-color: #926DCB;
+}
+
 
 
