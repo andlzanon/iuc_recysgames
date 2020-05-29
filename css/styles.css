@@ -3,15 +3,8 @@ body {
     background-color: #E5E5E5;
 }
 
-.header {
-    background-color: #563D7C;
-}
-
-.navbar {
-    background-color: #563D7C;
-}
-
 .btn-outline-primary {
+    font-size: 16px;
     color: #FFFFFF;
     border-color: #FFFFFF;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
@@ -69,8 +62,19 @@ body {
     margin: auto;
 }
 
+.profile-item:hover{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
 .cart-item {
     margin: auto;
+}
+
+
+.profile-item:hover{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
 .accessibility-item {
@@ -113,7 +117,7 @@ body {
 }
 
 .welcome-message {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.2;
 }
 
@@ -148,13 +152,32 @@ body {
     min-height: 100vh;
 }
 
-#content-container {
-    padding-top: 65px;
-}
-
 #navbar-sections {
+    width: 100%;
+    padding-top: 75px;
     background-color: #926DCB;
 }
+
+#main-nav {
+    background-color: #563D7C;
+}
+
+.nav{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 2px;
+}
+
+.nav-link{
+    color: #FFFFFF !important;
+    font-size: 24px;
+}
+
+.nav > li > a:hover{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
 
 
 
