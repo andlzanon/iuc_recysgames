@@ -31,6 +31,9 @@
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			crossorigin="anonymous"
 		></script>
+		<script
+			src="./js/script.js"
+		></script>
 
 		<link rel="icon" href="./images/logo.png">
 	</head>
@@ -44,7 +47,7 @@
 								<img
 									src="./images/logo.png"
 									height="50"
-									alt=""
+									alt="Logo"
 									loading="lazy"
 								/>
 							</a>
@@ -78,7 +81,7 @@
 											<img
 												src="./images/search.png"
 												height="20"
-												alt=""
+												alt="Busca"
 												loading="lazy"
 											/>
 										</div>
@@ -92,7 +95,7 @@
 												<img
 													class="profile-icon"
 													src="./images/user.png"
-													alt=""
+													alt="Conta do usuário"
 													loading="lazy"
 												/>
 												<div class="welcome-container">
@@ -109,7 +112,7 @@
 											><img
 												class="cart-icon"
 												src="./images/shopping_cart.png"
-												alt=""
+												alt="Carrinho de compras"
 												loading="lazy"
 										/></a>
 									</li>
@@ -169,6 +172,7 @@
 												<img
 													class="item-image"
 													src="./images/hollowknight.png"
+													alt="Capa do jogo"
 												/>
 												Hollow Knight
 											</div>
@@ -181,6 +185,7 @@
 												><img
 													class="delete-icon"
 													src="./images/delete.png"
+													alt="Remover"
 											/></a>
 										</td>
 									</tr>
@@ -195,36 +200,41 @@
 								<div class="freight-header">
 									Frete
 								</div>
-								<div class="freight-content">
-									<div class="cep-info-row">
-										<div class="col-8 cep-label">
-											Digite seu CEP para calcular o frete:
+								<form>
+									<div class="freight-content">
+										<div class="cep-info-row">
+											<div class="col-8 cep-label">
+												Digite seu CEP para calcular o frete:
+											</div>
+											<div class="col-4">
+												<input 
+													pattern="[0-9]{5}-[0-9]{3}"
+													title="00000-000"
+													class="cep-input"
+													maxlength="9"
+													type="text"
+													placeholder="00000-000" 
+												/>
+											</div>
 										</div>
-										<div class="col-4">
-											<input
-												class="cep-input"
-												maxlength="9"
-												type="text"
-											/>
+										<div class="cep-value-row">
+											<div class="col-8 cep-label">
+												Valor:
+											</div>
+											<div class="col-4 cep-label">
+												R$ 14,75
+											</div>
+										</div>
+										<div class="cep-button-row">
+											<button
+												type="submit"
+												class="btn btn-primary cep-button"
+											>
+												Calcular
+											</button>
 										</div>
 									</div>
-									<div class="cep-value-row">
-										<div class="col-8 cep-label">
-											Valor:
-										</div>
-										<div class="col-4 cep-label">
-											R$ 14,75
-										</div>
-									</div>
-									<div class="cep-button-row">
-										<button
-											type="button"
-											class="btn btn-primary cep-button"
-										>
-											Calcular
-										</button>
-									</div>
-								</div>
+								</form>
 							</div>
 							<div class="col-md-3 total-cart">
 								<div class="total-cart-header">
@@ -265,6 +275,7 @@
 							<div class="button-container">
 								<button
 									type="button"
+									onclick="navigateTo('index')"
 									class="btn btn-lg btn-outline-secondary"
 								>
 									CONTINUAR COMPRANDO
