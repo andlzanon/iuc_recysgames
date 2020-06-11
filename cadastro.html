@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>Cadastro</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="./css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="./css/cadastro.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="./js/script.js"
+		></script>
+
+		<link rel="icon" href="./images/logo.png">
+	</head>
+	<body>
+		<div id="page-container">
+			<div id="content-wrap">
+				<div class="header">
+					<div id="main-nav" class="fixed-top">
+						<nav class="navbar navbar-expand-lg navbar-dark container-md">
+							<a class="navbar-brand" href="index.html">
+								<img
+									src="./images/logo.png"
+									height="50"
+									alt="Logo"
+									loading="lazy"
+								/>
+							</a>
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+			
+							<div
+								class="collapse navbar-collapse"
+								id="navbarSupportedContent"
+							>
+								<form class="form-inline search-item col-md-8">
+									<div class="input-group col-md-12">
+										<input
+											type="text"
+											class="form-control search col-md-12"
+											placeholder="Busque aqui um game..."
+										/>
+										<div
+											class="input-group-append search-icon"
+											id="button-addon4"
+										>
+											<img
+												src="./images/search.png"
+												height="20"
+												alt="Busca"
+												loading="lazy"
+											/>
+										</div>
+									</div>
+								</form>
+								<ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+								<ul class="navbar-nav navbar-right">
+									<li class="nav-item active profile-item">
+										<a class="nav-link profile" href="#"
+											><div class="profile-item-container">
+												<img
+                                                    class="profile-icon"
+                                                    onclick="navigateTo('cadastro')"
+													src="./images/user.png"
+													alt="Conta do usuário"
+													loading="lazy"
+												/>
+												<div class="welcome-container">
+													<div class="welcome-message">
+														Bem-vindo,
+													</div>
+													<div class="welcome-message">Visitante</div>
+												</div>
+											</div></a
+										>
+									</li>
+									<li class="nav-item active cart-item">
+										<a class="nav-link" href="shopping_cart.html"
+											><img
+												class="cart-icon"
+												src="./images/shopping_cart.png"
+												alt="Carrinho de compras"
+												loading="lazy"
+										/></a>
+									</li>
+									<li class="nav-item active accessibility-item">
+										<button
+											class="btn btn-outline-primary my-2 my-sm-0"
+											type="submit"
+										>
+											Acessibilidade
+										</button>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<div id="navbar-sections">
+						<ul class="nav justify-content-between">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Lançamentos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Ofertas</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Play Station</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">XBOX</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Nintendo</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Outros</a>
+							</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="container">
+                    <h1 class="title">Nova Conta</h1>
+					<div class="card">
+                        <h1 class="form-title">Informações Pessoais</h1>
+                        <form id="nova-conta">
+                            <div class="form-input">
+                                <label class="text-label" for="name">Nome</label>
+                                <input class="text-input" type="text" id="name" name="name">
+                            </div>
+
+                            <div class="form-input">
+                                <label class="text-label" for="email">E-Mail</label>
+                                <input class="text-input" type="email" id="email" name="email">
+                            </div>
+
+                            <div class="form-input">
+                                <label class="text-label" for="senha">Senha</label>
+                                <input class="text-input" type="password" id="senha" name="senha">
+                            </div>
+
+                            <div class="form-input">
+                                <label class="text-label" for="c_senha">Confirmação de Senha</label>
+                                <input class="text-input" type="password" id="c_senha" name="c_senha">
+                            </div>
+                            
+                            <div class="form-input">
+                                <label class="text-label" for="console-cb">Seus Consoles</label>
+                                <label class="checkbox-inline"><input class="checkbox-input" type="checkbox" id="console-cb" value="ps4">Play Station 4</label>
+                                <label class="checkbox-inline"><input class="checkbox-input" type="checkbox" id="console-cb" value="xbox1">XBOX One</label>
+                                <label class="checkbox-inline"><input class="checkbox-input" type="checkbox" id="console-cb" value="ns">Nintendo Switch</label>
+                                <br>
+                                <label class="checkbox-inline"><input class="checkbox-input" type="checkbox" id="console-cb" value="ps3">Play Station 3</label>
+                                <label class="checkbox-inline"><input class="checkbox-input" type="checkbox" id="console-cb" value="xb360">XBOX 360</label>
+                            </div>
+                        </form>
+                    </div>
+
+					<div class="card">
+                        <h1 class="form-title">Perfil de Games</h1>
+                        <p class="description">Pesquise ao lado e adicione a seu perfil games que você gosta. A partir desses games vamos personalizar sua home (máx 10).</p>
+
+                        <form>
+                            <div class="form-input">
+                                <label class="text-label" for="game">Game Favorito</label>
+                                <input class="text-input" type="text" id="game" name="game">
+                                <button type="button" class="btn btn-primary buy-button btn-add">
+									ADICIONAR
+								</button>
+                            </div>
+                        </form>
+
+                        <div class="box">
+                            <div class="row">
+                                <div class="column col-xl-3">
+                                    <span class="tag">
+                                        <row>
+                                            <column class="tag-text"> Nioh </column>
+                                            <column>
+                                                <img class="close-icon" src="./images/close.png" alt="Remover tag" loading="lazy"/>
+                                            </column>
+                                        </row>
+                                    </span>
+                                </div>
+
+
+                                <div class="column col-xl-3">
+                                    <span class="tag">
+                                        <row>
+                                            <column class="tag-text"> RE 7 </column>
+                                            <column>
+                                                <img class="close-icon" src="./images/close.png" alt="Remover tag" loading="lazy"/>
+                                            </column>
+                                        </row>
+                                    </span>
+                                </div>
+                                    
+                                <div class="column col-xl-3">
+                                    <span class="tag">
+                                        <row>
+                                            <column class="tag-text"> Outlast </column>
+                                            <column>
+                                                <img class="close-icon" src="./images/close.png" alt="Remover tag" loading="lazy"/>
+                                            </column>
+                                        </row>
+                                    </span>
+                                </div> 
+
+                                <div class="column col-xl-3">
+                                    <span class="tag">
+                                        <row>
+                                            <column class="tag-text"> Dark Souls </column>
+                                            <column>
+                                                <img class="close-icon" src="./images/close.png" alt="Remover tag" loading="lazy"/>
+                                            </column>
+                                        </row>
+                                    </span>
+                                </div> 
+                            </div>
+
+                            <div class="row">
+                                <div class="column col-xl-3">
+                                    <span class="tag">
+                                        <row>
+                                            <column class="tag-text"> Chrono Trigger </column>
+                                            <column>
+                                                <img class="close-icon" src="./images/close.png" alt="Remover tag" loading="lazy"/>
+                                            </column>
+                                        </row>
+                                    </span>
+                                </div>
+
+
+                                <div class="column col-xl-3">
+                                    <span class="tag">
+                                        <row>
+                                            <column class="tag-text"> Dragon Quest </column>
+                                            <column>
+                                                <img class="close-icon" src="./images/close.png" alt="Remover tag" loading="lazy"/>
+                                            </column>
+                                        </row>
+                                    </span>
+                                </div>
+                                    
+                                <div class="column col-xl-3">
+                                    <span class="tag">
+                                        <row>
+                                            <column class="tag-text"> Assasin's Creed </column>
+                                            <column>
+                                                <img class="close-icon" src="./images/close.png" alt="Remover tag" loading="lazy"/>
+                                            </column>
+                                        </row>
+                                    </span>
+                                </div> 
+
+                                <div class="column col-xl-3">
+                                    <span class="tag">
+                                        <row>
+                                            <column class="tag-text"> The Witcher 3 </column>
+                                            <column>
+                                                <img class="close-icon" src="./images/close.png" alt="Remover tag" loading="lazy"/>
+                                            </column>
+                                        </row>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <div class="cadastro">
+                        <button type="button" form="nova-conta" onclick="navigateTo('index')" class="btn btn-primary buy-button btn-cadastro">
+                            CADASTRAR
+                        </button>
+                    </div>
+				</div>
+			</div>
+			<footer id="footer">
+				<div class="container">
+					<div class="row align-items-center footer-row">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<a href="#">Sobre nós</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<a href="#">Como comprar?</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<a href="#">Formas de pagamento</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<a href="#">Contato</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
