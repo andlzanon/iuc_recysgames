@@ -124,6 +124,10 @@
 	max-width: 120px;
 }
 
+.img-check-order{
+	width: 120px;
+}
+
 .rate {
 	display: inline-block;
 }

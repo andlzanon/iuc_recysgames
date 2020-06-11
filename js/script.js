@@ -1,3 +1,8 @@
+/**
+ * Funtion that set the next page to a button
+ * 
+ * @param {next page navigate to} page 
+ */
 function navigateTo(page) {
     var uri = window.location.href;
     uri = uri.replace('file://', '');
@@ -14,6 +19,7 @@ function navigateTo(page) {
 var aumentar_fonte = document.querySelector("#aumentar-fonte");
 var diminuir_fonte = document.querySelector("#diminuir-fonte");
 
+// increase font to all tags bellow
 aumentar_fonte.addEventListener("click", function (event){
     increaseTag("h1")
     increaseTag("p")
@@ -24,6 +30,7 @@ aumentar_fonte.addEventListener("click", function (event){
     increaseTag("td")
 });
 
+// decrease font to all tags bellow
 diminuir_fonte.addEventListener("click", function (event){
     descreaseTag("h1")
     descreaseTag("p")
@@ -34,6 +41,11 @@ diminuir_fonte.addEventListener("click", function (event){
     descreaseTag("td")
 });
 
+/**
+ * Function that increase the font size of all tags with tag = tagName eg. h1, p, a, etc
+ * 
+ * @param {name of the tag that the text will get bigger} tagName 
+ */
 function increaseTag(tagName) {
 
     var max_size = getMaxSize(tagName)
@@ -52,6 +64,12 @@ function increaseTag(tagName) {
     }    
 }
 
+
+/**
+ * Function that decrease the font size of all tags with tag = tagName eg. h1, p, a, etc
+ * 
+ * @param {name of the tag that the text will get smaller} tagName 
+ */
 function descreaseTag(tagName) {
 
     var min_size = 15
@@ -70,6 +88,11 @@ function descreaseTag(tagName) {
     }    
 }
 
+/**
+ * Function sets the maximum size to a tagName eg. h1, p, a, etc
+ * 
+ * @param {name of the tag} tagName 
+ */
 function getMaxSize(tagName){
     if (tagName == "h1")
         return 40
@@ -92,3 +115,91 @@ function getMaxSize(tagName){
     else if (tagName == "td")
         return 18
 }
+
+var mudar_contraste = document.querySelector("#contraste");
+
+mudar_contraste.addEventListener("click", function (event){
+    changeTagContrast("p")
+    changeTagContrast("h1")
+    changeTagContrast("h4")
+    changeTagContrast("footer")
+    changeTagContrast("label")
+    changeTagContrast("input")
+    changeTagContrast("span")
+
+
+    changeIdContrast("main-nav")
+    changeIdContrast("navbar-sections")
+    changeIdContrast("tag-box")
+    changeIdContrast("check-order")
+
+    changeClassContrast("button")
+});
+
+function changeTagContrast(tagName) {
+
+    var tags = document.getElementsByTagName(tagName)
+
+    for (var i = 0; i < tags.length; i++) {
+        var elem = tags[i]
+
+        if(elem != null){
+            elem.style.color = "#000000"
+
+            if(tagName == "footer" || tagName == "span"){
+                elem.style.background = "#000000"
+            }
+
+            if(tagName == "input"){
+                elem.style.border = "2px solid #000000"
+            }
+        }
+    }
+}
+
+function changeIdContrast(idName) {
+
+    var elem = document.getElementById(idName)
+
+    if(elem != null){
+        if(idName == "main-nav"){
+            elem.style.background = "#000000"
+        }
+        else if (idName == "tag-box") {
+            elem.style.border = "2px solid #000000"
+        }
+        else if(idName == "check-order"){
+            elem.src="./images/check-contrast.png"
+        }
+        else{
+            elem.style.background = "#000000"
+        }
+    }
+}
+
+function changeClassContrast(tagName) {
+
+    var tags = document.getElementsByTagName(tagName)
+
+    for (var i = 0; i < tags.length; i++) {
+
+        var elem = tags[i]
+
+        if(elem != null){
+            if (elem.classList.contains("btn-outline-secondary")){
+                elem.classList.add('btn-outline-secondary-contrast');
+                elem.classList.remove('btn-outline-secondary');
+            }
+            else{
+                elem.classList.add('btn-primary-contrast');
+                elem.classList.remove('btn-primary');
+            }
+        }
+    }
+}
+
+var contraste_original = document.querySelector("#contraste-original");
+
+contraste_original.addEventListener("click", function (event){
+    location.reload()
+});
