@@ -156,25 +156,25 @@
                     <h1 class="title">Nova Conta</h1>
 					<div class="card">
                         <h1 class="form-title">Informações Pessoais</h1>
-                        <form id="nova-conta">
+                        <form id="nova-conta" action="./index.html">
                             <div class="form-input">
                                 <label class="text-label" for="name">Nome</label>
-                                <input class="text-input" type="text" id="name" name="name">
+                                <input class="text-input form-control" type="text" id="name" name="name" required>
                             </div>
 
                             <div class="form-input">
                                 <label class="text-label" for="email">E-Mail</label>
-                                <input class="text-input" type="email" id="email" name="email">
+                                <input class="text-input form-control" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" required>
                             </div>
 
                             <div class="form-input">
                                 <label class="text-label" for="senha">Senha</label>
-                                <input class="text-input" type="password" id="senha" name="senha">
+                                <input class="text-input" type="password" id="senha" name="senha" required>
                             </div>
 
                             <div class="form-input">
                                 <label class="text-label" for="c_senha">Confirmação de Senha</label>
-                                <input class="text-input" type="password" id="c_senha" name="c_senha">
+                                <input class="text-input" type="password" id="c_senha" name="c_senha" required>
                             </div>
                             
                             <div class="form-input">
@@ -185,11 +185,11 @@
                                 <br>
                                 <label class="checkbox-inline"><input class="checkbox-input" type="checkbox" id="console-cb" value="ps3">Play Station 3</label>
                                 <label class="checkbox-inline"><input class="checkbox-input" type="checkbox" id="console-cb" value="xb360">XBOX 360</label>
-                            </div>
+							</div>
                         </form>
                     </div>
 
-					<div class="card">
+					<div class="card card-perfil">
                         <h1 class="form-title">Perfil de Games</h1>
                         <p class="description">Pesquise ao lado e adicione a seu perfil games que você gosta. A partir desses games vamos personalizar sua home (máx 10).</p>
 
@@ -298,13 +298,14 @@
                                 </div> 
                             </div>
                         </div>
-                    </div>  
-                    
-                    <div class="cadastro">
-                        <button type="button" form="nova-conta" onclick="navigateTo('index')" class="btn btn-primary buy-button btn-cadastro">
-                            CADASTRAR
-                        </button>
-                    </div>
+					</div>  
+					
+					<div class="cadastro">
+						<button type="submit" class="btn btn-primary buy-button btn-cadastro btn-sm" form="nova-conta">
+							CADASTRAR
+						</button>
+					</div>
+
 				</div>
 			</div>
 			<footer id="footer">
