@@ -31,9 +31,6 @@
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			crossorigin="anonymous"
 		></script>
-		<script
-			src="./js/script.js"
-		></script>
 
 		<link rel="icon" href="./images/logo.png">
 	</head>
@@ -116,13 +113,20 @@
 												loading="lazy"
 										/></a>
 									</li>
-									<li class="nav-item active accessibility-item">
+									<li class="nav-item active accessibility-item dropdown">
 										<button
-											class="btn btn-outline-primary my-2 my-sm-0"
+											id="dropdownMenuButton"
+											class="btn btn-outline-primary my-2 my-sm-0 dropdown-toggle"
 											type="submit"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
 										>
 											Acessibilidade
 										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a id="aumentar-fonte" class="dropdown-item" href="#">Aumentar Fonte</a>
+											<a id="diminuir-fonte" class="dropdown-item" href="#">Diminuir Fonte</a>
+											<a id="contraste" class="dropdown-item" href="#">Aumentar Contraste</a>
+										  </div>
 									</li>
 								</ul>
 							</div>
@@ -234,6 +238,9 @@
 				</div>
 			</footer>
 		</div>
+
+		<script
+			src="./js/script.js"
+		></script>
 	</body>
 </html>
-

@@ -228,6 +228,10 @@ tbody {
     margin-bottom: 30px;
 }
 
+.table td, .table th {
+	padding: .5rem;
+}
+
 @media (max-width: 799px) {
 	.total-cart-header {
 		text-align: start;
