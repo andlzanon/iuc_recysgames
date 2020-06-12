@@ -18,6 +18,21 @@ body {
     border-color: #FFFFFF;
 }
 
+.btn-outline-primary-contrast {
+    font-size: 16px;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.75);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.75);
+	box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+.btn-outline-primary-contrast:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
 .btn-outline-secondary {
     color: #7952B3;
     background-color: white;

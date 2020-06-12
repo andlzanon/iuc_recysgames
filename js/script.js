@@ -116,8 +116,10 @@ function getMaxSize(tagName){
         return 18
 }
 
+// obtem o botao de contraste da nav
 var mudar_contraste = document.querySelector("#contraste");
 
+// muda o contraste das tag, ids e classes passadas por parametro
 mudar_contraste.addEventListener("click", function (event){
     changeTagContrast("p")
     changeTagContrast("h1")
@@ -136,6 +138,12 @@ mudar_contraste.addEventListener("click", function (event){
     changeClassContrast("button")
 });
 
+/**
+ * Function that changes background, color and/or border
+ * depending on the tags name, making it with more contrast
+ * 
+ * @param {name of the tag} tagName 
+ */
 function changeTagContrast(tagName) {
 
     var tags = document.getElementsByTagName(tagName)
@@ -157,6 +165,11 @@ function changeTagContrast(tagName) {
     }
 }
 
+/**
+ * Function that changes background, color, img src and/or border
+ * depending on the id name, making it with more contrast
+ * @param {name of the tag} idName 
+ */
 function changeIdContrast(idName) {
 
     var elem = document.getElementById(idName)
@@ -177,6 +190,13 @@ function changeIdContrast(idName) {
     }
 }
 
+/**
+ * Function that changes the class of an element
+ * depending on the class name, making it with more contrast
+ * the element is found by the tag, than the class is searched by class name
+ * 
+ * @param {name of the tag} tagName 
+ */
 function changeClassContrast(tagName) {
 
     var tags = document.getElementsByTagName(tagName)
@@ -190,6 +210,10 @@ function changeClassContrast(tagName) {
                 elem.classList.add('btn-outline-secondary-contrast');
                 elem.classList.remove('btn-outline-secondary');
             }
+            else if (elem.classList.contains("btn-outline-primary")){
+                elem.classList.add('btn-outline-primary-contrast');
+                elem.classList.remove('btn-outline-primary');
+            }
             else{
                 elem.classList.add('btn-primary-contrast');
                 elem.classList.remove('btn-primary');
@@ -198,8 +222,10 @@ function changeClassContrast(tagName) {
     }
 }
 
+// obtem o botao de volta para o contraste original da nav 
 var contraste_original = document.querySelector("#contraste-original");
 
+// ao clickar atualiza a pagina, fazendo com que e tela volte ao normal
 contraste_original.addEventListener("click", function (event){
     location.reload()
 });
