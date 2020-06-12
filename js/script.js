@@ -214,7 +214,7 @@ function changeClassContrast(tagName) {
                 elem.classList.add('btn-outline-primary-contrast');
                 elem.classList.remove('btn-outline-primary');
             }
-            else{
+            else if (elem.classList.contains("btn-primary")){
                 elem.classList.add('btn-primary-contrast');
                 elem.classList.remove('btn-primary');
             }
