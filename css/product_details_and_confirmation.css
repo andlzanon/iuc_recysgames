@@ -8,6 +8,10 @@
 	padding: 15px;
 }
 
+#card-confirmacao{
+	margin: 30px auto;
+}
+
 .details {
 	display: flex;
 	flex-direction: row;
