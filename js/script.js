@@ -28,6 +28,7 @@ aumentar_fonte.addEventListener("click", function (event){
     increaseTag("button")
     increaseTag("th")
     increaseTag("td")
+    increaseTag("li")
 });
 
 // decrease font to all tags bellow
@@ -39,6 +40,7 @@ diminuir_fonte.addEventListener("click", function (event){
     descreaseTag("button")
     descreaseTag("th")
     descreaseTag("td")
+    descreaseTag("li")
 });
 
 /**
@@ -101,7 +103,7 @@ function getMaxSize(tagName){
         return 22
 
     else if (tagName == "a")
-        return 18
+        return 24
     
     else if (tagName == "label")
         return 25
@@ -114,6 +116,9 @@ function getMaxSize(tagName){
 
     else if (tagName == "td")
         return 18
+    
+    else if (tagName == "li")
+        return 24
 }
 
 // obtem o botao de contraste da nav
