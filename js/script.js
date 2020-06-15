@@ -160,11 +160,11 @@ function changeTagContrast(tagName) {
             elem.style.color = "#000000"
 
             if(tagName == "footer" || tagName == "span"){
-                elem.style.background = "#000000"
+                elem.style.background = "#404040"
             }
 
             if(tagName == "input"){
-                elem.style.border = "2px solid #000000"
+                elem.style.border = "2px solid #404040"
             }
         }
     }
@@ -181,7 +181,7 @@ function changeIdContrast(idName) {
 
     if(elem != null){
         if(idName == "main-nav"){
-            elem.style.background = "#000000"
+            elem.style.background = "#404040"
         }
         else if (idName == "tag-box") {
             elem.style.border = "2px solid #000000"
@@ -190,7 +190,7 @@ function changeIdContrast(idName) {
             elem.src="./images/check-contrast.png"
         }
         else{
-            elem.style.background = "#000000"
+            elem.style.background = "#3e3e3e"
         }
     }
 }

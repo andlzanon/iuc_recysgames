@@ -90,7 +90,7 @@ tbody {
 
 .delete-link:hover {
 	text-decoration: none;
-	opacity: 50%;
+	opacity: 100%;
 }
 
 .delete-icon {
@@ -167,7 +167,7 @@ tbody {
 }
 
 .cep-button:hover {
-    opacity: 70%;
+    opacity: 100%;
     cursor: pointer;
 }
 

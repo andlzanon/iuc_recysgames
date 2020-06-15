@@ -13,7 +13,7 @@ body {
 }
 
 .btn-outline-primary:hover {
-    color: #563D7C;
+    color: #56278C;
     background-color: #FFFFFF;
     border-color: #FFFFFF;
 }
@@ -34,9 +34,9 @@ body {
 }
 
 .btn-outline-secondary {
-    color: #7952B3;
+    color: #56278C;
     background-color: white;
-    border-color: #7952B3;
+    border-color: #56278C;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
@@ -44,8 +44,8 @@ body {
 
 .btn-outline-secondary:hover {
     color: white;
-    background-color: #7952B3;
-    border-color: #7952B3;
+    background-color: #56278C;
+    border-color: #56278C;
 }
 
 .btn-outline-secondary-contrast {
@@ -59,14 +59,14 @@ body {
 
 .btn-outline-secondary-contrast:hover {
     color: white;
-    background-color: #000000;
-    border-color: #000000;
+    background-color: #3e3e3e;
+    border-color: #3e3e3e;
 }
 
 .btn-primary {
     border: 0;
     color: #FFFFFF;
-    background-color: #7952B3;
+    background-color: #56278C;
     padding: 5px 25px;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
@@ -75,13 +75,13 @@ body {
 
 .btn-primary:hover {
     border: 0;
-    background-color: #563D7C;
+    background-color: #56278C;
 }
 
 .btn-primary-contrast {
     border: 0;
     color: #FFFFFF;
-    background-color: #000000;
+    background-color: #3e3e3e;
     padding: 5px 25px;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
@@ -90,7 +90,7 @@ body {
 
 .btn-primary-contrast:hover {
     border: 0;
-    background-color: #000000b2;
+    background-color: #3e3e3e;
     color: #FFFFFF;
 }
 
@@ -177,7 +177,7 @@ body {
 }
 
 #footer {
-    background-color: #7952B3;
+    background-color: #56278C;
     color: #FFFFFF;
     position: absolute;
     bottom: 0;
@@ -201,11 +201,11 @@ body {
 #navbar-sections {
     width: 100%;
     padding-top: 75px;
-    background-color: #926DCB;
+    background-color: #56278C;
 }
 
 #main-nav {
-    background-color: #563D7C;
+    background-color: #56278C;
 }
 
 .nav{
