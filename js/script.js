@@ -142,7 +142,66 @@ mudar_contraste.addEventListener("click", function (event){
     changeIdContrast("scrollup-btn")
 
     changeClassContrast("button")
+
+    if (document.getElementById("banner") != null){
+        document.getElementById("banner").classList.add("jumbotron-gray")
+    }
+    changeImagesContrast()
 });
+
+/**
+ * Function that changes images
+ */
+function changeImagesContrast() {
+
+    var imgs = document.getElementsByTagName("img")
+
+    for (var i = 0; i < imgs.length; i++) {
+        var elem = imgs[i]
+
+        if(elem != null){
+            var id = elem.id
+
+            if(id == "id-hollow-knight" || id == "check-order"){
+                elem.src="./images/gray/gray_hollowknight.png"
+            }
+            if(id == "id-bloodborne"){
+                elem.src="./images/gray/gray_bloodborne.png"
+            }
+            if(id == "id-fc5"){
+                elem.src="./images/gray/gray_farcry5.jpg"
+            }
+            if(id == "id-ff7"){
+                elem.src="./images/gray/gray_ffVII.png"
+            }
+            if(id == "id-horizon"){
+                elem.src="./images/gray/gray_horizon.jpg"
+            }
+            if(id == "id-p5"){
+                elem.src="./images/gray/gray_persona5.png"
+            }
+            if(id == "id-re2"){
+                elem.src="./images/gray/gray_re2_remake.png"
+            }
+            if(id == "id-reviews"){
+                elem.src="./images/gray/gray_reviews.png"
+            }
+            if(id == "id-starts"){
+                elem.src="./images/gray/gray_stars.png"
+            }
+            if(id == "id-thelastii"){
+                elem.src="./images/gray/gray_tloupartII.jpg"
+            }
+            if(id == "id-cyberpunk"){
+
+            }
+
+            if(document.getElementById("banner") != null){
+                
+            }
+        }
+    }
+}
 
 /**
  * Function that changes background, color and/or border
