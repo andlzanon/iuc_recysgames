@@ -138,7 +138,6 @@ mudar_contraste.addEventListener("click", function (event){
     changeIdContrast("main-nav")
     changeIdContrast("navbar-sections")
     changeIdContrast("tag-box")
-    changeIdContrast("check-order")
     changeIdContrast("scrollup-btn")
 
     changeClassContrast("button")
@@ -162,7 +161,7 @@ function changeImagesContrast() {
         if(elem != null){
             var id = elem.id
 
-            if(id == "id-hollow-knight" || id == "check-order"){
+            if(id == "id-hollow-knight"){
                 elem.src="./images/gray/gray_hollowknight.png"
             }
             if(id == "id-bloodborne"){
@@ -191,6 +190,9 @@ function changeImagesContrast() {
             }
             if(id == "id-thelastii"){
                 elem.src="./images/gray/gray_tloupartII.jpg"
+            }
+            if(id == "check-order"){
+                elem.src="./images/check-contrast.png"
             }
             if(id == "id-cyberpunk"){
 
@@ -245,9 +247,6 @@ function changeIdContrast(idName) {
         }
         else if (idName == "tag-box") {
             elem.style.border = "2px solid #000000"
-        }
-        else if(idName == "check-order"){
-            elem.src="./images/check-contrast.png"
         }
         else{
             elem.style.background = "#3e3e3e"
