@@ -139,6 +139,7 @@ mudar_contraste.addEventListener("click", function (event){
     changeIdContrast("navbar-sections")
     changeIdContrast("tag-box")
     changeIdContrast("check-order")
+    changeIdContrast("scrollup-btn")
 
     changeClassContrast("button")
 });
@@ -234,3 +235,21 @@ var contraste_original = document.querySelector("#contraste-original");
 contraste_original.addEventListener("click", function (event){
     location.reload()
 });
+
+
+upbutton = document.getElementById("scrollup-btn");
+
+upbutton.addEventListener("click", function (event){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    upbutton.style.display = "block";
+  } else {
+    upbutton.style.display = "none";
+  }
+}

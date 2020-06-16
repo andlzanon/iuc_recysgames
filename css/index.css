@@ -8,6 +8,12 @@
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding-top: 252px;
+    padding-left: 50rem;
+}
+
+.btn-jumbo{
+    width: 100%;
 }
 
 .card{
@@ -26,7 +32,7 @@
     font-weight: bold;
 }
 
-.pre-venda {
+.pre-venda-preco {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
@@ -75,11 +81,16 @@
 }
 
 
-/** Para fazer banner desaparecer
-@media (max-width: 1080px) 
+
+@media (max-width: 1190px) 
 {
     .jumbotron {
         display: none;
     }
+
+    .column{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
 }
-**/
