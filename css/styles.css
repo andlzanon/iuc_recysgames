@@ -13,7 +13,7 @@ body {
 }
 
 .btn-outline-primary:hover {
-    color: #56278C;
+    color: #350057;
     background-color: #FFFFFF;
     border-color: #FFFFFF;
 }
@@ -34,9 +34,9 @@ body {
 }
 
 .btn-outline-secondary {
-    color: #56278C;
+    color: #350057;
     background-color: white;
-    border-color: #56278C;
+    border-color: #350057;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
@@ -44,8 +44,8 @@ body {
 
 .btn-outline-secondary:hover {
     color: white;
-    background-color: #56278C;
-    border-color: #56278C;
+    background-color: #350057;
+    border-color: #350057;
 }
 
 .btn-outline-secondary-contrast {
@@ -66,7 +66,7 @@ body {
 .btn-primary {
     border: 0;
     color: #FFFFFF;
-    background-color: #56278C;
+    background-color: #350057;
     padding: 5px 25px;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
@@ -75,7 +75,7 @@ body {
 
 .btn-primary:hover {
     border: 0;
-    background-color: #56278C;
+    background-color: #350057;
 }
 
 .btn-primary-contrast {
@@ -177,7 +177,7 @@ body {
 }
 
 #footer {
-    background-color: #56278C;
+    background-color: #350057;
     color: #FFFFFF;
     position: absolute;
     bottom: 0;
@@ -204,7 +204,7 @@ body {
 }
 
 #main-nav {
-    background-color: #56278C;
+    background-color: #350057;
 }
 
 .nav{
@@ -266,7 +266,7 @@ ul.breadcrumb li a:hover {
     font-size: 18px; 
     border-radius: 50%;
     border: 1px solid #FFFFFF;
-    background-color: #56278C;
+    background-color: #350057;
 }
 
 #up-img{

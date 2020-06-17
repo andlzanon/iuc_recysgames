@@ -21,26 +21,26 @@ var diminuir_fonte = document.querySelector("#diminuir-fonte");
 
 // increase font to all tags bellow
 aumentar_fonte.addEventListener("click", function (event){
-    increaseTag("h1")
-    increaseTag("p")
-    increaseTag("a")
-    increaseTag("label")
-    increaseTag("button")
-    increaseTag("th")
-    increaseTag("td")
-    increaseTag("li")
+    increaseTag("h1");
+    increaseTag("p");
+    increaseTag("a");
+    increaseTag("label");
+    increaseTag("button");
+    increaseTag("th");
+    increaseTag("td");
+    increaseTag("li");
 });
 
 // decrease font to all tags bellow
 diminuir_fonte.addEventListener("click", function (event){
-    descreaseTag("h1")
-    descreaseTag("p")
-    descreaseTag("a")
-    descreaseTag("label")
-    descreaseTag("button")
-    descreaseTag("th")
-    descreaseTag("td")
-    descreaseTag("li")
+    descreaseTag("h1");
+    descreaseTag("p");
+    descreaseTag("a");
+    descreaseTag("label");
+    descreaseTag("button");
+    descreaseTag("th");
+    descreaseTag("td");
+    descreaseTag("li");
 });
 
 /**
@@ -50,19 +50,19 @@ diminuir_fonte.addEventListener("click", function (event){
  */
 function increaseTag(tagName) {
 
-    var max_size = getMaxSize(tagName)
+    var max_size = getMaxSize(tagName);
 
-    var tags = document.getElementsByTagName(tagName)
+    var tags = document.getElementsByTagName(tagName);
 
     for (var i = 0; i < tags.length; i++) {
-        var elem = tags[i]
+        var elem = tags[i];
         var cur_font_size = window.getComputedStyle(elem, null).getPropertyValue('font-size');
-        var size = parseInt(cur_font_size.split("px")[0])
+        var size = parseInt(cur_font_size.split("px")[0]);
         if(size < max_size) {
-            size = size + 2
+            size = size + 2;
         }
-        var new_font_size = size.toString() + "px"
-        elem.style.fontSize = new_font_size
+        var new_font_size = size.toString() + "px";
+        elem.style.fontSize = new_font_size;
     }    
 }
 
@@ -74,19 +74,19 @@ function increaseTag(tagName) {
  */
 function descreaseTag(tagName) {
 
-    var min_size = 15
+    var min_size = 15;
 
-    var tags = document.getElementsByTagName(tagName)
+    var tags = document.getElementsByTagName(tagName);
 
     for (var i = 0; i < tags.length; i++) {
-        var elem = tags[i]
+        var elem = tags[i];
         var cur_font_size = window.getComputedStyle(elem, null).getPropertyValue('font-size');
-        var size = parseInt(cur_font_size.split("px")[0])
+        var size = parseInt(cur_font_size.split("px")[0]);
         if(size > min_size) {
-            size = size - 2
+            size = size - 2;
         }
-        var new_font_size = size.toString() + "px"
-        elem.style.fontSize = new_font_size
+        var new_font_size = size.toString() + "px";
+        elem.style.fontSize = new_font_size;
     }    
 }
 
@@ -97,28 +97,28 @@ function descreaseTag(tagName) {
  */
 function getMaxSize(tagName){
     if (tagName == "h1")
-        return 40
+        return 40;
     
     else if (tagName == "p")
-        return 22
+        return 22;
 
     else if (tagName == "a")
-        return 24
+        return 24;
     
     else if (tagName == "label")
-        return 25
+        return 25;
 
     else if (tagName == "button")
-        return 23
+        return 23;
     
     else if (tagName == "th")
-        return 24
+        return 24;
 
     else if (tagName == "td")
-        return 18
+        return 18;
     
     else if (tagName == "li")
-        return 24
+        return 24;
 }
 
 // obtem o botao de contraste da nav
@@ -126,26 +126,26 @@ var mudar_contraste = document.querySelector("#contraste");
 
 // muda o contraste das tag, ids e classes passadas por parametro
 mudar_contraste.addEventListener("click", function (event){
-    changeTagContrast("p")
-    changeTagContrast("h1")
-    changeTagContrast("h4")
-    changeTagContrast("footer")
-    changeTagContrast("label")
-    changeTagContrast("input")
-    changeTagContrast("span")
+    changeTagContrast("p");
+    changeTagContrast("h1");
+    changeTagContrast("h4");
+    changeTagContrast("footer");
+    changeTagContrast("label");
+    changeTagContrast("input");
+    changeTagContrast("span");
 
 
-    changeIdContrast("main-nav")
-    changeIdContrast("navbar-sections")
-    changeIdContrast("tag-box")
-    changeIdContrast("scrollup-btn")
+    changeIdContrast("main-nav");
+    changeIdContrast("navbar-sections");
+    changeIdContrast("tag-box");
+    changeIdContrast("scrollup-btn");
 
-    changeClassContrast("button")
+    changeClassContrast("button");
 
     if (document.getElementById("banner") != null){
-        document.getElementById("banner").classList.add("jumbotron-gray")
+        document.getElementById("banner").classList.add("jumbotron-gray");
     }
-    changeImagesContrast()
+    changeImagesContrast();
 });
 
 /**
@@ -153,53 +153,49 @@ mudar_contraste.addEventListener("click", function (event){
  */
 function changeImagesContrast() {
 
-    var imgs = document.getElementsByTagName("img")
+    var imgs = document.getElementsByTagName("img");
 
     for (var i = 0; i < imgs.length; i++) {
-        var elem = imgs[i]
+        var elem = imgs[i];
 
         if(elem != null){
-            var id = elem.id
+            var id = elem.id;
 
             if(id == "id-hollow-knight"){
-                elem.src="./images/gray/gray_hollowknight.png"
+                elem.src="./images/gray/gray_hollowknight.png";
             }
             if(id == "id-bloodborne"){
-                elem.src="./images/gray/gray_bloodborne.png"
+                elem.src="./images/gray/gray_bloodborne.png";
             }
             if(id == "id-fc5"){
-                elem.src="./images/gray/gray_farcry5.jpg"
+                elem.src="./images/gray/gray_farcry5.jpg";
             }
             if(id == "id-ff7"){
-                elem.src="./images/gray/gray_ffVII.png"
+                elem.src="./images/gray/gray_ffVII.png";
             }
             if(id == "id-horizon"){
-                elem.src="./images/gray/gray_horizon.jpg"
+                elem.src="./images/gray/gray_horizon.jpg";
             }
             if(id == "id-p5"){
-                elem.src="./images/gray/gray_persona5.png"
+                elem.src="./images/gray/gray_persona5.png";
             }
             if(id == "id-re2"){
-                elem.src="./images/gray/gray_re2_remake.png"
+                elem.src="./images/gray/gray_re2_remake.png";
             }
             if(id == "id-reviews"){
-                elem.src="./images/gray/gray_reviews.png"
+                elem.src="./images/gray/gray_reviews.png";
             }
             if(id == "id-starts"){
-                elem.src="./images/gray/gray_stars.png"
+                elem.src="./images/gray/gray_stars.png";
             }
             if(id == "id-thelastii"){
-                elem.src="./images/gray/gray_tloupartII.jpg"
+                elem.src="./images/gray/gray_tloupartII.jpg";
             }
             if(id == "check-order"){
-                elem.src="./images/check-contrast.png"
+                elem.src="./images/gray/check.jpeg";
             }
             if(id == "id-cyberpunk"){
-
-            }
-
-            if(document.getElementById("banner") != null){
-                
+                elem.src="./images/gray/gray_cyberpunk.jpeg";
             }
         }
     }
@@ -213,20 +209,20 @@ function changeImagesContrast() {
  */
 function changeTagContrast(tagName) {
 
-    var tags = document.getElementsByTagName(tagName)
+    var tags = document.getElementsByTagName(tagName);
 
     for (var i = 0; i < tags.length; i++) {
-        var elem = tags[i]
+        var elem = tags[i];
 
         if(elem != null){
-            elem.style.color = "#000000"
+            elem.style.color = "#000000";
 
             if(tagName == "footer" || tagName == "span"){
-                elem.style.background = "#404040"
+                elem.style.background = "#404040";
             }
 
             if(tagName == "input"){
-                elem.style.border = "2px solid #404040"
+                elem.style.border = "2px solid #404040";
             }
         }
     }
@@ -239,17 +235,17 @@ function changeTagContrast(tagName) {
  */
 function changeIdContrast(idName) {
 
-    var elem = document.getElementById(idName)
+    var elem = document.getElementById(idName);
 
     if(elem != null){
         if(idName == "main-nav"){
-            elem.style.background = "#404040"
+            elem.style.background = "#404040";
         }
         else if (idName == "tag-box") {
-            elem.style.border = "2px solid #000000"
+            elem.style.border = "2px solid #000000";
         }
         else{
-            elem.style.background = "#3e3e3e"
+            elem.style.background = "#3e3e3e";
         }
     }
 }
@@ -263,11 +259,11 @@ function changeIdContrast(idName) {
  */
 function changeClassContrast(tagName) {
 
-    var tags = document.getElementsByTagName(tagName)
+    var tags = document.getElementsByTagName(tagName);
 
     for (var i = 0; i < tags.length; i++) {
 
-        var elem = tags[i]
+        var elem = tags[i];
 
         if(elem != null){
             if (elem.classList.contains("btn-outline-secondary")){
@@ -291,7 +287,7 @@ var contraste_original = document.querySelector("#contraste-original");
 
 // ao clickar atualiza a pagina, fazendo com que e tela volte ao normal
 contraste_original.addEventListener("click", function (event){
-    location.reload()
+    location.reload();
 });
 
 
