@@ -16,6 +16,7 @@ body {
     color: #350057;
     background-color: #FFFFFF;
     border-color: #FFFFFF;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btn-outline-primary-contrast {
@@ -31,6 +32,7 @@ body {
     color: #000000;
     background-color: #FFFFFF;
     border-color: #FFFFFF;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btn-outline-secondary {
@@ -46,6 +48,7 @@ body {
     color: white;
     background-color: #350057;
     border-color: #350057;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btn-outline-secondary-contrast {
@@ -61,6 +64,7 @@ body {
     color: white;
     background-color: #3e3e3e;
     border-color: #3e3e3e;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btn-primary {
@@ -76,6 +80,7 @@ body {
 .btn-primary:hover {
     border: 0;
     background-color: #350057;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btn-primary-contrast {
@@ -85,13 +90,14 @@ body {
     padding: 5px 25px;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btn-primary-contrast:hover {
     border: 0;
     background-color: #3e3e3e;
     color: #FFFFFF;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
 .form-control {
