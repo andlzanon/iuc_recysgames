@@ -197,6 +197,9 @@ function changeImagesContrast() {
             if(id == "id-cyberpunk"){
                 elem.src="./images/gray/gray_cyberpunk.jpeg";
             }
+            if(id == "id-review-stars"){
+                elem.src="./images/gray/gray_stars.png";
+            }
         }
     }
 }
