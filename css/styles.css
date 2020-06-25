@@ -260,6 +260,11 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
+.mandatory{
+    color: red;
+    background-color: transparent;
+}
+
 #scrollup-btn {
     display: none; 
     position: fixed; 
