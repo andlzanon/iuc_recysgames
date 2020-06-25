@@ -1,3 +1,8 @@
+.mandatory{
+    color: red;
+    background-color: transparent;
+}
+
 .card{
     height: 100%;
     width: 100%;
